@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade de Fixação</title>
+
+  <!--<style>
+    .estilo {
+      background-color: yellow;
+    }
+
+    .estilo2 {
+      background-color: red;
+    }
+
+    .estilo3 {
+      background-color: green;
+    }
+  </style>-->
+</head>
+
+<body>
+
+  <script>
+    function acionaCampo() {
+      document.getElementById('campo').style.background = "yellow"
+    }
+    function validaCampo() {
+      var valorCampo = document.getElementById('campo').value
+      if (valorCampo.length < 3) {
+        document.getElementById('campo').style.background = "red"
+      } else {
+        document.getElementById('campo').style.background = "green"
+      }
+    }
+  </script>
+  <!--<script>
+    function modificaFundo() {
+      document.getElementById('botao').className = 'estilo'
+    }
+  </script>-->
+  <!--<input onmouseover="modificaFundo()" id="botao" class="estilo1" type="text">-->
+  <input id="campo" type="text" onfocus="acionaCampo()" onblur="validaCampo()" />
+</body>
+
+</html>

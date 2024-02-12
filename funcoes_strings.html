@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções nativas para manipular strings</title>
+</head>
+
+<body>
+  <script>
+
+    //propriedade length
+    //retorna a quantidade de caracteres a partir do inicial 0
+    document.write('Bruna Fernandes dos Santos'.length)
+
+    //método charAt() - função
+    //retorna o caractere no índice indicado
+    document.write('Bruna Fernandes dos Santos'.charAt(5))
+
+    //método indexOf()
+    //retorna a posição da primeira ocorrência do caractere
+    var nome = 'Bruna Fernandes dos Santos'
+
+    document.write(nome.indexOf('a'))
+
+    //método replace()
+    //ele pesquisa a cadeia de caracteres e a substitui
+    var nome = 'Bruna Fernandes dos Santos'
+
+    document.write(nome.replace('Fernandes', 'Silva'))
+
+    //método substr()
+    //ele pesquisa a cadeia de caracteres e a substitui
+    var nome = 'Bruna Fernandes dos Santos'
+
+    document.write(nome.substr(6, 4))
+
+    //método toLowerCase()
+    //converte todos os caracteres para minúsculo
+    var nome = 'Bruna Fernandes dos Santos'
+
+    document.write(nome.toLowerCase())
+
+    //método toUpperCase()
+    //converte todos os caracteres para maiúsculo
+    var nome = 'Bruna Fernandes dos Santos'
+
+    document.write(nome.toUpperCase())
+
+    //método trim()
+    //remover espaços, que estão na extremidade dos caracteres
+    var nome = ' Bruna Fernandes dos Santos '
+
+    document.write('-' + nome.trim() + '-')
+
+  </script>
+</body>
+
+</html>

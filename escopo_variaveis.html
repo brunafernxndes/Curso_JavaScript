@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escopo de Variáveis</title>
+</head>
+
+<body>
+  <script>
+
+    //variáveis dentro do escopo global, passam a serem vistas em todos os outros escopos;
+    //variáveis dentro do escopo do bloco, sobe um nível e passa a ser de nível global, assim podendo ser lida em todos os escopos;
+    //variáveis dentro do escopo da função ficam somente dentro da função, mesmo quando existe um escopo de bloco dentro dela, ainda ficam a nível de função e não global.
+
+    //3 escopos: global, função e o bloco
+
+    var serie = 'Friends'
+
+    //escopo de bloco
+    if (true) {
+      var serie2 = 'Game of Thrones'
+      document.write(serie)
+    }
+
+    document.write(serie2)
+
+    document.write('<br/>')
+
+    function x() {
+      var serie3 = 'The Walking Dead'
+      document.write(serie)
+      document.write(serie2)
+    }
+
+    x()
+
+    document.write('<br/>')
+    document.write(serie3)
+
+  </script>
+</body>
+
+</html>

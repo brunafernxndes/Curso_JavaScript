@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de Repetição - Foreach</title>
+
+</head>
+
+<body>
+
+  <script>
+    //var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda', 'Maria']
+    //foreach atua apenas em valores numéricos
+
+    var listaFuncionarios = Array()
+
+    listaFuncionarios['x'] = 'Viviane'
+    listaFuncionarios[false] = 'Rosângela'
+    listaFuncionarios[3] = 'Miguel'
+    listaFuncionarios[27] = 'Lucas'
+    listaFuncionarios[-12] = 'Fernanda'
+
+    var f = function (valor, indice) {
+      console.log(valor, indice)
+    }
+
+    listaFuncionarios.forEach(f)
+
+    /*console.log(listaFuncionarios)
+    document.write(listaFuncionarios[3])
+
+    listaFuncionarios.forEach(function (valor, indice, array) {
+      //lógica
+      console.log('índice: ' + indice + ' | valor: ' + valor)
+
+      if (valor == 'Lucas') {
+        array[indice] = 'Um novo valor'
+      }
+    })
+
+    console.log(listaFuncionarios)
+    document.write('<br/>' + listaFuncionarios)*/
+  </script>
+
+</body>
+
+</html>
